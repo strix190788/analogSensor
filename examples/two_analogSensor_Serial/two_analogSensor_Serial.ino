@@ -11,8 +11,8 @@ void setup() {
 }
 
 void loop() {
-  Serial.print(leftSensor.read());
+  Serial.print(leftSensor.mapRead());
   Serial.print("\t");
-  Serial.println(rightSensor.read());
+  Serial.println(rightSensor.mapRead());
   delay(200);
 }

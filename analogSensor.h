@@ -19,6 +19,9 @@ public:
   int mapRead() {
     return map(analogRead(_pin), 0, 1023, 0, 100);
   }
+  int mapRead(int minVal, int maxVal) {
+    return map(analogRead(_pin), 0, 1023, minVal, maxVal);
+  }
   
 private:
   byte _pin;
